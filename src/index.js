@@ -7,9 +7,9 @@ const App =()=>{
     return (
         <div className=" ui container comments">
            
-            <CommentDetail author="Sam"/>
-            <CommentDetail author="Elliot"/>
-            <CommentDetail author="Joseph"/>
+            <CommentDetail author="Sam" timeAgo="Today at 4:12" commentText="nice pic"/>
+            <CommentDetail author="Elliot" timeAgo="Today at 3:12" commentText="Nice blog"/>
+            <CommentDetail author="Joseph" timeAgo="Today at 1:12" commentText="Thanks for sharing"/>
 
         </div>
     )
