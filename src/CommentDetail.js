@@ -1,11 +1,11 @@
 import React from 'react'
-import { faker } from '@faker-js/faker';
 
-function CommentDetail({author ,timeAgo}) {
+
+function CommentDetail({author ,timeAgo ,commentText ,profilepic}) {
   return (
     <div className="comment ">
     <a href="/" className="avatar">
-        <img alt="avatar" src={faker.image.avatar()}/>
+        <img alt="avatar" src={profilepic}/>
     </a>
     <div className="content">
         <a  href="/" className="author">
@@ -15,7 +15,7 @@ function CommentDetail({author ,timeAgo}) {
 
             <span className="date">{timeAgo}</span>
         </div>
-        <div className="text"> Nice blog post</div>
+        <div className="text"> {commentText}</div>
     </div>
 
 </div>
